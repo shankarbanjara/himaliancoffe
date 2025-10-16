@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Himalayan Coffee House</title>
+  <meta name="description" content="Get in touch with Himalayan Coffee House. Contact us for reservations, catering, or any questions about our authentic Nepali coffee experience.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Navigation -->
+<nav class="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+  <div class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-green-700 rounded-full flex items-center justify-center">
+          <span class="text-white font-bold text-lg">H</span>
+        </div>
+        <h1 class="text-2xl font-bold text-green-700" data-i18n="hero.headline_2">Himalayan Coffee House</h1>
+      </div>
+
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-green-700 transition-colors" data-i18n="nav.home">Home</a>
+        <a href="menu.html" class="text-gray-700 hover:text-green-700 transition-colors" data-i18n="nav.menu">Menu</a>
+        <a href="about.html" class="text-gray-700 hover:text-green-700 transition-colors" data-i18n="nav.about">About</a>
+        <a href="location.html" class="text-gray-700 hover:text-green-700 transition-colors" data-i18n="nav.location">Location</a>
+        <a href="contact.html" class="text-gray-700 hover:text-green-700 transition-colors" data-i18n="nav.contact">Contact</a>
+
+        <!-- Cart tab -->
+        <a href="cart.html" class="relative text-gray-700 hover:text-green-700 transition-colors flex items-center gap-1" aria-label="Cart">
+          <span aria-hidden="true">🛒</span>
+          <span data-i18n="nav.cart">Cart</span>
+          <span id="cart-count" class="badge">0</span>
+        </a>
+
+        <!-- Language switch -->
+        <div class="flex items-center gap-2 pl-3 border-l">
+          <button type="button" data-lang="ja" title="日本語" class="text-xl">🇯🇵</button>
+          <button type="button" data-lang="en" title="English" class="text-xl">🇺🇸</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Contact Hero -->
+<section class="py-20 bg-gradient-to-b from-green-700 to-green-800 text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h1 class="text-5xl font-bold mb-6" data-i18n="nav.contact">お問い合わせ</h1>
+    <p class="text-xl max-w-2xl mx-auto">We'd love to hear from you! Reach out for reservations, catering, or just to say hello</p>
+  </div>
+</section>
+
+<section class="py-20">
+  <div class="container mx-auto px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">Send us a Message</h2>
+          <form class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 font-medium mb-2">First Name *</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+              </div>
+              <div>
+                <label class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+              </div>
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Email Address *</label>
+              <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Message *</label>
+              <textarea rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors">Send Message</button>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 mb-8">Get in Touch</h2>
+          <div class="space-y-8">
+            <div class="bg-white rounded-lg shadow-lg p-6">
+              <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+              <p class="text-gray-600">Thamel Marg, Kathmandu 44600, Nepal</p>
+              <p class="text-gray-600">+977-1-4441234</p>
+              <p class="text-gray-600">hello@himalayancoffeehouse.com.np</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-gray-800 text-white py-12">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-bold mb-4 text-yellow-400">Himalayan Coffee House</h3>
+        <p class="text-gray-300">Authentic Nepali coffee experience in the heart of Kathmandu's Thamel district.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="index.html" class="text-gray-300 hover:text-yellow-400">Home</a></li>
+          <li><a href="menu.html" class="text-gray-300 hover:text-yellow-400">Menu</a></li>
+          <li><a href="about.html" class="text-gray-300 hover:text-yellow-400">About Us</a></li>
+          <li><a href="location.html" class="text-gray-300 hover:text-yellow-400">Location</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Visit Us</h4>
+        <p class="text-gray-300">Thamel, Kathmandu<br>Open Daily: 6:00 AM - 10:00 PM</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
